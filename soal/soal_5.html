@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="testangular">
+  <head>
+    <title>Angular Test</title>
+    <script src="../angular.min.js"></script>
+    <script src="../angular-cookies.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="soal_5.js"></script>
+  </head>
+  <body>
+    <div ng-controller="soal_5">
+      <ul>
+        <li ng-repeat="row in list track by $index">
+          <input type="text" ng-model="struktur_list.nama"/>
+        </li>
+      </ul>
+      <ul>
+        <li ng-repeat="row in list track by $index">
+          <h1>{{strukturCopy}}</h1>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

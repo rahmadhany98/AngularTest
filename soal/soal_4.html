@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="testangular">
+
+<head>
+    <title>Angular Test</title>
+    <script src="../angular.min.js"></script>
+    <script src="../angular-cookies.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="soal_4.js"></script>
+</head>
+
+<body>
+    <div ng-controller="soal_4">
+        <select ng-init="user = namaKaryawanKeys[0]" ng-model="user">
+            <option ng-repeat="karyawan in namaKaryawanKeys" ng-value="karyawan">{{namaKaryawan[karyawan]}}</option>
+        </select>
+</body>
+
+</html>

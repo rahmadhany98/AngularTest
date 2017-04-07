@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="testangular">
+
+<head>
+    <title>Angular Test</title>
+    <script src="../angular.min.js"></script>
+    <script src="../angular-cookies.js"></script>
+    <script src="../jquery.js"></script>
+    <script src="soal_2.js"></script>
+</head>
+
+<body>
+    <div ng-controller="soal_2">
+        <input type="number" ng-model="uang" />
+          <h3>{{ uang | currency:"IDR ":2}}</h3>
+    </div>
+</body>
+
+</html>
